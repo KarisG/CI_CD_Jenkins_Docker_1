@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt --user
 COPY . .
 # Bundle app source
 EXPOSE 5000
-CMD ["python", "api.py"]
+RUN ["python", "api.py"]
