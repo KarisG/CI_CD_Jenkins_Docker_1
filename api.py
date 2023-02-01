@@ -15,7 +15,8 @@ def predict():
     prediction = model.predict(to_predict)
     
     result = np.argmax(model.predict(to_predict)[0], axis = 0)
-    
+    print("Test result")
+    print(result)
     return class_names[result]
 
 if __name__ == '__main__':
