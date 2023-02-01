@@ -4,14 +4,14 @@ pipeline {
 	    stage('Build docker image') {
 	        steps {
 	            script{
-	                docker.build()
+	                docker.build('jspquoimettre')
 	            }
 		    }
 	    }
 	    stage('Docker run'){
 	        steps{
 	            script{
-	                docker.image()
+	                docker.image('jspquoimettre')
 	            }
 	        }
 	    }
