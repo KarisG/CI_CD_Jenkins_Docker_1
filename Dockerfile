@@ -2,7 +2,7 @@
 FROM python:3.9
 # Install python and flask
 # Create app directory
-WORKDIR /JETESTE
+WORKDIR /
 # Install app dependencies
 COPY requirements.txt ./
 RUN /usr/local/bin/python -m pip install --upgrade pip
