@@ -5,7 +5,7 @@ FROM python:3-alpine
 WORKDIR /JETESTE
 # Install app dependencies
 COPY requirements.txt ./
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --user
 COPY . .
 # Bundle app source
 EXPOSE 5000
