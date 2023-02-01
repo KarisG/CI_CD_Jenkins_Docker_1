@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt --user
 COPY . .
 # Bundle app source
 EXPOSE 5000
-RUN ["python", "-m", "flask", "run", "--host","0.0.0.0","--port","5000", "--logfile","api.log"]
+RUN ["python", "api.py","--logfile","api.log"]
