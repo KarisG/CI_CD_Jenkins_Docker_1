@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt --user
 COPY . .
 # Bundle app source
 EXPOSE 5000
-RUN ["python", "api.py", "--host","0.0.0.0","--port","5000"]
+CMD ["python", "app.py", "--log-file=app.log"]
