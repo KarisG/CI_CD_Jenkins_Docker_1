@@ -792,5 +792,5 @@ headers = {
     'Content-Type' : 'application/json'
 }
 
-response = requests.post(url, json=payload, headers = headers)
+response = requests.post(API_ENDPOINT, json=payload, headers = headers)
 print("reponse :",response)
