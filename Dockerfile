@@ -1,5 +1,5 @@
 # Dockerfile to build a flask app
-FROM python:3.9
+FROM python:3-alpine
 # Install python and flask
 # Create app directory
 WORKDIR /
