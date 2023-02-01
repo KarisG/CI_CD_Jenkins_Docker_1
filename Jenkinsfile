@@ -4,7 +4,7 @@ pipeline {
 	    stage('Build docker image') {
 	        steps {
 	            script{
-			bat 'Hello World!'
+			bat 'echo Hello World!'
 	                docker.build('jspquoimettre')
 	            }
 		    }
