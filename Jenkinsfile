@@ -13,7 +13,6 @@ pipeline {
 	        steps{
 	            script{
 	                docker.image('jspquoimettre')
-			docker logs jspquoimettre
 	            }
 	        }
 	    }
