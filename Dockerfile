@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt --user
 COPY . .
 # Bundle app source
 EXPOSE 5000
-CMD ["python3", "api.py", "--log-file=api.log"]
+CMD ["python3", "api.py"]
 
