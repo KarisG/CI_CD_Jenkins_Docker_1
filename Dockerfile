@@ -11,3 +11,4 @@ COPY . .
 # Bundle app source
 EXPOSE 5000
 CMD ["python", "app.py", "--log-file=api.log"]
+
