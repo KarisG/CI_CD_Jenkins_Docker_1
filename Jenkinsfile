@@ -11,7 +11,7 @@ pipeline {
 			echo 'Build docker'
 			bat 'docker build -t testapisecond .'
 			echo 'Run docker'
-			bat 'docker run -p 5001:5001 -d testapisecond'
+			bat 'docker run -p 5000:5000 -d testapisecond'
 	        }
 	    }
 	}
