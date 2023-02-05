@@ -11,5 +11,5 @@ COPY . .
 COPY TP7MLOPS.h5 .
 COPY api.log .
 # Bundle app source
-EXPOSE 5000
+EXPOSE 5001
 CMD ["python", "api.py","--logfile","api.log"]
