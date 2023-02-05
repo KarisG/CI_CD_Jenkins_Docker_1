@@ -1,5 +1,6 @@
 from flask import Flask, request
 from tensorflow import keras
+import numpy as np
 
 app = Flask(__name__)
 class_names = ['T-shirt/top','Trouser','Pullover','Dress','Coat','Sandal','Shirt','Sneaker','Bag','Ankle boot']
