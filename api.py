@@ -8,15 +8,12 @@ class_names = ['T-shirt/top','Trouser','Pullover','Dress','Coat','Sandal','Shirt
 def predict():
     input_data = request.get_json()
     
-    #input_data = X_test[0].reshape(-1, 28, 28, 1)
     to_predict = np.array(input_data["data"]).reshape(-1, 28, 28, 1)
     model = keras.models.load_model('TP7MLOPS.h5')
 
     prediction = model.predict(to_predict)
+    result = np.argmax(prediction[0], axis = 0)
     
-    result = np.argmax(model.predict(to_predict)[0], axis = 0)
-    print("Test result")
-    print(result)
     return class_names[result]
 
 if __name__ == '__main__':
