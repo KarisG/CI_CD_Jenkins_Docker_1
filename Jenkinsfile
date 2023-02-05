@@ -1,19 +1,17 @@
 pipeline {
     agent any
     stages {
-	    stage('Build docker image') {
+	    stage('Pipeline working') {
 	        steps {
-	            script{
 			bat 'echo Hello World!'
-	                docker.build('jspquoimettre')
-	            }
 		    }
 	    }
 	    stage('Docker run'){
 	        steps{
-	            script{
-	                docker.image('jspquoimettre')
-	            }
+			echo 'Build docker'
+			bat 'docker build -t testapi .'
+			echo 'Run docker'
+			bat 'docker run -p 5000:5000 -d testapi'
 	        }
 	    }
 	}
