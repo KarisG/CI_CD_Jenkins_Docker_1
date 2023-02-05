@@ -9,9 +9,9 @@ pipeline {
 	    stage('Docker run'){
 	        steps{
 			echo 'Build docker'
-			bat 'docker build -t testapi .'
+			bat 'docker build -t testapisecond .'
 			echo 'Run docker'
-			bat 'docker run -p 5000:5000 -d testapi'
+			bat 'docker run -p 5001:5001 -d testapisecond'
 	        }
 	    }
 	}
